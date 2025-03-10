@@ -12,12 +12,16 @@ def dividir(a, b):
         return "Error: División por cero"
     return a / b
 
+def potencia(a, b):
+    return a ** b
+
 def main():
     print("Calculadora en Python")
     print("1: Sumar")
     print("2: Restar")
     print("3: Multiplicar")
     print("4: Dividir")
+    print("5: Potencia")
     
     opcion = int(input("Elige una opción: "))
     num1 = float(input("Introduce el primer número: "))
@@ -31,6 +35,8 @@ def main():
         print("Resultado:", multiplicar(num1, num2))
     elif opcion == 4:
         print("Resultado:", dividir(num1, num2))
+    elif opcion == 5:
+        print("Resultado:", potencia(num1, num2))
     else:
         print("Opción inválida")
 
